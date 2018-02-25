@@ -20,10 +20,14 @@ public class JavaOutputFormatting {
 	}
 
 	private static void showResult(List<String> strings, List<Integer> listOfInteger) {
-		System.out.println("================================");	
+		addTheHorizontalLine();	
 		for(int i=0; i<3; i++) {
 			System.out.println(String.format("%-15s%03d", strings.get(i), listOfInteger.get(i)));
 		}
+		addTheHorizontalLine();
+	}
+
+	private static void addTheHorizontalLine() {
 		System.out.println("================================");
 	}
 
